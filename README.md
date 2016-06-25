@@ -6,10 +6,10 @@ Author:        Tim Handy
 Affil:         Center for Laser Experimental Astrophysics Research, University of Michigan
 Creation date: June 25, 2016
 
-# ColorTables
+## ColorTables
 
 Collection of color tables for MATLAB based on VisIt *.ct files. Contains MATLAB script for converting VisIt to MATLAB.
 
-# FigureSetup
+## FigureSetup
 
 Collection of MATLAB scripts to make publication-ready figures.
