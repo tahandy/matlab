@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Object name="ColorTable">
-    <Field name="Version" type="string">2.9.1</Field>
+    <Field name="Version" type="string">2.3.0</Field>
     <Object name="ColorControlPointList">
         <Object name="ColorControlPoint">
             <Field name="colors" type="unsignedCharArray" length="4">71 71 219 255 </Field>
@@ -33,6 +33,5 @@
             <Field name="colors" type="unsignedCharArray" length="4">224 76 76 255 </Field>
             <Field name="position" type="float">1</Field>
         </Object>
-        <Field name="category" type="string">UserDefined</Field>
     </Object>
 </Object>

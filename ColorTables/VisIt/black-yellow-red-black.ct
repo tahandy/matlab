@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Object name="ColorTable">
+    <Field name="Version" type="string">1.11.1</Field>
+    <Object name="ColorControlPointList">
+        <Object name="ColorControlPoint">
+        </Object>
+        <Object name="ColorControlPoint">
+            <Field name="colors" type="unsignedCharArray" length="4">255 255 0 255 </Field>
+            <Field name="position" type="float">0.0739372</Field>
+        </Object>
+        <Object name="ColorControlPoint">
+            <Field name="colors" type="unsignedCharArray" length="4">255 0 0 255 </Field>
+            <Field name="position" type="float">0.513863</Field>
+        </Object>
+        <Object name="ColorControlPoint">
+            <Field name="colors" type="unsignedCharArray" length="4">127 0 0 255 </Field>
+            <Field name="position" type="float">0.680222</Field>
+        </Object>
+        <Object name="ColorControlPoint">
+            <Field name="position" type="float">0.863216</Field>
+        </Object>
+    </Object>
+</Object>

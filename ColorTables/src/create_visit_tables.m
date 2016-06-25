@@ -19,6 +19,7 @@ for i=1:numel(ctList)
     xmlfilename = fullfile(visitPath,fnm);
     [~,tablenameold,~] = fileparts(xmlfilename);
     tablenamenew = sprintf('visit_%s.m',lower(tablenameold));
+    tablenamenew = strrep(tablenamenew,'-','_');
     cmapfilename = fullfile(outputPath,tablenamenew);
     
     % Diagnostics
