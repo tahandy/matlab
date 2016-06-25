@@ -1,0 +1,66 @@
+#=============================================
+#
+#    VisIt to Matlab color table converter
+#
+# Author:      Timothy Handy
+# Affiliation: University of Michigan
+# Date:        June 22, 2016
+#
+#=============================================
+
+#-------------------------------------
+#       Directory contents
+#-------------------------------------
+
+sample.pdf
+    - Summary images of all available color tables
+    - Coarseness in the images is due to my image creation
+        method, and not the tables themselves. 
+
+colortables/
+    - Contains MATLAB colormap functions
+
+VisIt/
+    - Contains the original VisIt color tables
+
+src/
+    - Contains the MATLAB source to write arbitrary
+        color tables based on control points to 
+        a MATLAB function usable with colormap(...)
+    - Contains the MATLAB source used to convert
+        the color tables
+    - Contains the MATLAB source to generate 'sample.pdf'
+
+#-------------------------------------
+#        Viewing color tables
+#-------------------------------------
+
+The file 'sample.pdf' contains sample images of all available 
+color maps provided in the 'colortables' directory.
+
+#-------------------------------------
+#     Using pre-created color tables
+#-------------------------------------
+
+Copy any or all of the '.m' files located in 'colortables/' 
+to a directory in your MATLAB path. The simplest user-writable 
+location will likely be ~/Documents/MATLAB. 
+
+#-------------------------------------
+#     Generating new color tables
+#-------------------------------------
+
+From control point values:
+    
+    See src/write_color_table.m
+
+    You will need to provide control point positions on the 
+    interval [0,1], and the corresponding RGB colors at each
+    point.
+
+From VisIt '.ct' files:
+    
+    See src/create_visit_tables.m
+
+
+    
