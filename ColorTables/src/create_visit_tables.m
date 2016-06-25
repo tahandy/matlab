@@ -14,12 +14,14 @@ ctList = dir(fullfile(visitPath,'*.ct'));
 for i=1:numel(ctList)
     % Do some path stuff
     % We convert to the VisIt name to lowercase, otherwise colormap(...)
-    % complains because they do a lower internally 
+    % complains because they do a lower internally.
+    % Additionally, replace all dashes with underscores, and then make sure
+    % there is only 1 underscore (e.g. no '__' in the name).
     fnm = ctList(i).name;
     xmlfilename = fullfile(visitPath,fnm);
     [~,tablenameold,~] = fileparts(xmlfilename);
     tablenamenew = sprintf('visit_%s.m',lower(tablenameold));
-    tablenamenew = strrep(tablenamenew,'-','_');
+    tablenamenew = regexprep(strrep(tablenamenew,'-','_'),'_+','_');
     cmapfilename = fullfile(outputPath,tablenamenew);
     
     % Diagnostics

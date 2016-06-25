@@ -30,6 +30,10 @@ Z = Y;
 fig = figure(1);
 set(fig,'color','white','position',[680, 558, pxWidth,ctPerPage*pxPerSamp])
 
+% Open sample.pdf in order to reset it to an empty file
+fid = fopen(sampleFile,'w');
+fclose(fid);
+
 for j=1:numel(ctBnds)
     clf;
     for i=ctBnds(j):min(ctBnds(j)+ctPerPage-1,ctCount)
@@ -48,5 +52,5 @@ for j=1:numel(ctBnds)
         freezeColors
     end
 
-    export_fig('../sample.pdf','-append','-nocrop')
+    export_fig(sampleFile,'-append','-nocrop')
 end
