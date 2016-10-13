@@ -6,7 +6,7 @@
 
 clear all; close all; clc;
 visitPath   = '../VisIt';
-outputPath  = '../colortables';
+outputPath  = '../colortables/VisIt';
 
 % Get all visit .ct files
 ctList = dir(fullfile(visitPath,'*.ct'));
